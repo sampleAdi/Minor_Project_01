@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://kit.fontawesome.com/b8a915db41.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>ECW</h1>
+        <div class="anc" id="d1" >
+            <li><a href="/products">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </div>
+        <div class="anc" id="d2">
+            <div id="drop-menu" ><a href="">Profile</a>
+                <div class="drop">
+                    <div id="e"><i class="fa-regular fa-user"></i><a href="">Profile</a></div>
+                    <div id="e"><i class="fa-solid fa-box"></i><a href="">My Orders</a></div>
+                    <div id="e"><i class="fa-regular fa-heart"></i><a href="/wish">My WishList</a></div>
+                    <div id="e"><i class="fa-solid fa-cart-shopping"></i><a href="/cart">My Cart</a></div>
+                </div>
+            </div>
+
+            <div class="heart"><a href="#"><i class="fa-regular fa-heart"></i></a>
+                <div id="f1"><%= wish_count %></div>
+            </div>
+            <div class="cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div id="f2"><%= cart_count %></div>
+            </div>
+            <!-- <div><a href="">Price</a></div> -->
+        </div>
+        <div class="bar"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <div class="shrink" class=".mn">
+        <li><a href="/products">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/product">Profile</a></li>
+        <li><a href="">My Orders</a></li>
+        <li><a href="/wish">My WishList</a></li>
+        <li><a href="/cart">My Cart</a></li>
+    </div>
+</body>
+<script>
+    let ele = document.querySelector('.bar');
+        ele.onclick = function () {
+            let mn = document.querySelector('.shrink');
+            let icon=document.querySelector('.fa-bars');
+            mn.classList.toggle('mn');
+            icon.classList.toggle('fa-xmark');   
+        }
+</script>
+</html>

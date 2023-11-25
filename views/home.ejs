@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <%- include('../partials/nav') %>
+    </header>
+    <h1 style="letter-spacing: 1px;">TOP PRODUCTS</h1>
+    <div class="product1">
+        <% topProducts.forEach(product => { %>
+            <div class="item1">
+                <img style="width: 300px;height: 300px;" src="<%=product.img%>" alt="Loading...">
+                <p><%= product.name %></p>
+                <p>$<%= product.price %></p>
+            </div>
+
+        <% }) %>
+        <!-- <div class="item1">
+            <img  style="width: 300px;height: 300px;" src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-1.jpg" alt="">
+            <p>Corsair HS35 Headphones(Red)</p>
+            <p>$70.00</p>
+        </div>
+        <div class="item1">
+            <img  style="width: 300px;height: 300px;" src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-7.jpg" alt="">
+            <p>Microsoft Xbox One S Blue Grey</p>
+            <p>$52.00</p>
+        </div>
+        <div class="item1">
+            <img  style="width: 300px;height: 300px;" src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-4.jpg" alt="">
+            <p>Sam Sung Galaxy Note 10 Lite</p>
+            <p>$52.00</p>
+        </div>
+        <div class="item1">
+            <img  style="width: 300px;height: 300px;" src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-2.jpg" alt="">
+            <p>Samsung Galaxy M21</p>
+            <p>$55.00</p>
+        </div>
+        <div class="item1">
+            <img  style="width: 300px;height: 300px;" src="https://demo-61.woovinapro.com/wp-content/uploads/2018/09/product-16.jpg" alt="">
+            <p>Samsung Galaxy V21</p>
+            <p>$75.00</p>
+        </div>
+        <div class="item1">
+            <img  style="width: 300px;height: 300px;" src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-8.jpg" alt="">
+            <p>SIRUM 360 Mobile Holder Trip</p>
+            <p>$10.00</p>
+        </div>
+        <div class="item1">
+            <img  style="width: 300px;height: 300px;" src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-3.jpg" alt="">
+            <p>SIRUM 360 Mobile Holder Trip</p>
+            <p>$75.00</p>
+        </div> -->
+    </div>
+
+    <div class="shop-now-btn">
+        <button style="margin: auto;display: grid;justify-content: center;align-items: center;width: 180px;height: 55px;background-color: #434141;font-size: 15px;color: white;">Shop Now</button>
+    </div>
+    
+    <div class="divide">
+       <div class="part1">
+        <p style="font-size: 20px;color: white;position: relative;top: 20%;left: 10%;letter-spacing: 2px;font-weight: bold;";>LIMITED EDITION</p>
+        <p style="position: relative;top: 18%;left: 10%;font-size: 40px;font-weight: bold;letter-spacing: 2px;color: white;">Virtual Reality</p>
+        <p style="position: relative;top: 9%;left: 10%;font-size: 40px;font-weight: bold;letter-spacing: 2px;color: white;">Glasses</p>
+        <button style="position: relative;top:10%;left: 10%;width: 150px;height: 50px;background-color: white;border-style: none;color: black;font-weight: 700;">Shop Now</button>
+       </div>
+       <div class="part2">
+        <p style="font-size: 20px;color: white;position: relative;top: 20%;left: 10%;letter-spacing: 2px;font-weight: bold;";>Colletion SS21</p>
+        <p  style="position: relative;top: 18%;left: 10%;font-size: 40px;font-weight: bold;letter-spacing: 2px;color: white;">Put the world</p>
+        <p style="position: relative;top: 9%;left: 10%;font-size: 40px;font-weight: bold;letter-spacing: 2px;color: white;">On mute</p>
+        <button style="position: relative;top:10%;left: 10%;width: 150px;height: 50px;background-color: white;border-style: none;color: black;font-weight: 700;">Shop Now</button>
+       </div>
+    </div>
+
+    <div class="Shop_Category">
+        <h1 style="color: white;display: flex;justify-content: center;align-items: center;letter-spacing: 2px;position: relative;top: 40px;">SHOP BY CATEGORIES</h1>
+        <img style="margin: auto;display: block;position: relative;top: 30px" src="https://demo-61.woovinapro.com/wp-content/uploads/2022/04/icon-title.png" alt="">
+        <div class="Shop_Category_Product">
+            <div class="item1">
+            <img src="https://demo-61.woovinapro.com/wp-content/uploads/2022/04/cate1.jpg" alt="">
+            <p style="display: flex;justify-content: center;align-items: center;">SMARTPHONE & IPAD</p>
+            </div>
+            <div class="item1">
+                <img src="https://demo-61.woovinapro.com/wp-content/uploads/2022/04/cate2.jpg" alt="">
+                <p style="display: flex;justify-content: center;align-items: center;"> AUDIO $ VIDEO GAME</p>
+            </div>
+            <div class="item1">
+                <img src="https://demo-61.woovinapro.com/wp-content/uploads/2022/04/cate3.jpg " alt="">
+                <p style="display: flex;justify-content: center;align-items: center;">HEADPHONE</p>
+            </div>
+            <div class="item1">
+                <img src="https://demo-61.woovinapro.com/wp-content/uploads/2022/04/cate4.jpg" alt="">
+                <p style="display: flex;justify-content: center;align-items: center;">TECHNOLOGIES</p>
+            </div>
+        </div>
+    </div>
+    <div class="special">
+        <h1 style="position: relative;left: 5%;margin-top: 50px;">SPECIAL</h1>
+        <div class="special_product">
+            <% products.forEach(product => { %>
+                <div class="mini">
+                    <img src="<%=product.image.img1%>" alt="">
+                    <p style="position: relative;left: 50%;bottom: 55%;"><%= product.name %></p>
+                    <p style="position: relative;left: 50%;bottom:55%;">$<%= product.price %></p>
+                    <button style="position: relative;left: 50%;bottom: 55%;background-color: #949292;border-style: none;width: 150px;height: 40px;color: white;font-weight: bold;"><a href="product/<%=product.id%>">BUY WOOVINA</a></button>
+                </div>
+            <% }) %>
+        
+        <!-- <div class="mini">
+            <img src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-1.jpg" alt="">
+            <p style="position: relative;left: 50%;bottom: 55%;">Corsair HS35</p>
+            <p style="position: relative;left: 50%;bottom:55%;">$70.00</p>
+            <button style="position: relative;left: 50%;bottom: 55%;background-color: #333333;border-style: none;width: 150px;height: 40px;color: white;font-weight: bold;">BUY WOOVINA</button>
+        </div>
+        <div class="mini">
+            <img src="https://demo-61.woovinapro.com/wp-content/uploads/2018/09/product-10.jpg" alt="">
+            <p style="position: relative;left: 50%;bottom: 55%;">Microsoft Xbox One S Bl</p>
+            <p style="position: relative;left: 50%;bottom:55%;">$12.00</p>
+            <button style="position: relative;left: 50%;bottom: 55%;background-color: #333333;border-style: none;width: 150px;height: 40px;color: white;font-weight: bold;">BUY WOOVINA</button>
+        </div>
+        <div class="mini">
+            <img src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-7.jpg" alt="">
+            <p style="position: relative;left: 50%;bottom: 55%;">Microsoft Xbox One S</p>
+            <p style="position: relative;left: 50%;bottom:55%;">$52.00</p>
+            <button style="position: relative;left: 50%;bottom: 55%;background-color: #333333;border-style: none;width: 150px;height: 40px;color: white;font-weight: bold;">BUY WOOVINA</button>
+        </div>
+        <div class="mini">
+            <img src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-4.jpg" alt="">
+            <p style="position: relative;left: 50%;bottom: 55%;">Sam Sung Galaxy Note 1</p>
+            <p style="position: relative;left: 50%;bottom:55%;">$53.00</p>
+            <button style="position: relative;left: 50%;bottom: 55%;background-color: #333333;border-style: none;width: 150px;height: 40px;color: white;font-weight: bold;">BUY WOOVINA</button>
+        </div>
+        <div class="mini">
+            <img src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-2.jpg" alt="">
+            <p style="position: relative;left: 50%;bottom: 55%;">Samsung Galaxy M21</p>
+            <p style="position: relative;left: 50%;bottom:55%;">$55.00</p>
+            <button style="position: relative;left: 50%;bottom: 55%;background-color: #333333;border-style: none;width: 150px;height: 40px;color: white;font-weight: bold;">BUY WOOVINA</button>
+        </div>
+        <div class="mini">
+            <img src="https://demo-61.woovinapro.com/wp-content/uploads/2018/09/product-16.jpg" alt="">
+            <p style="position: relative;left: 50%;bottom: 55%;">Samsung Galaxy V21</p>
+            <p style="position: relative;left: 50%;bottom:55%;">$75.00</p>
+            <button style="position: relative;left: 50%;bottom: 55%;background-color: #333333;border-style: none;width: 150px;height: 40px;color: white;font-weight: bold;">BUY WOOVINA</button>
+        </div>
+        <div class="mini">
+            <img src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-8.jpg" alt="">
+            <p style="position: relative;left: 50%;bottom: 55%;">SIRUM 360 Mobile Holder</p>
+            <p style="position: relative;left: 50%;bottom:55%;">$20.00</p>
+            <button style="position: relative;left: 50%;bottom: 55%;background-color: #333333;border-style: none;width: 150px;height: 40px;color: white;font-weight: bold;">BUY WOOVINA</button>
+        </div>
+        <div class="mini">
+            <img src="https://demo-61.woovinapro.com/wp-content/uploads/2020/11/product-3.jpg" alt="">
+            <p style="position: relative;left: 50%;bottom: 55%;">SmartPhone & Ipad</p>
+            <p style="position: relative;left: 50%;bottom:55%;">$75.00</p>
+            <button style="position: relative;left: 50%;bottom: 55%;background-color: #333333;border-style: none;width: 150px;height: 40px;color: white;font-weight: bold;">BUY WOOVINA</button>
+        </div> -->
+    </div>
+    </div>
+
+    <script src="../src/nav.js"></script>
+</body>
+</html>

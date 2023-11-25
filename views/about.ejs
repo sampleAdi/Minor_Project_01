@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Aditya Tiwari</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        /* font-family: 'Sevillana', cursive; */
+        }
+
+        a {
+            color: rgb(161, 158, 158);
+            text-decoration: none;
+            transition: 0.7s;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            border-top: 1px solid #ccc;
+            padding-top: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: #05102E;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <%- include('../partials/nav') %>
+    
+    <h1 style="text-align: center; margin:20px">About Us</h1>
+    <div class="container">
+        <p>Hello there! I'm <strong>Aditya Tiwari, Abhishek Adjariya, Abhishek Kumar and Varsha Singh </strong>,  passionate learners and  3rd year student at GLA University Mathura.</p>
+        <p>I am pursuing my studies in a field that I find incredibly fascinating and full of possibilities. My journey through the academic world has been filled with exciting challenges and inspiring moments.</p>
+        <p>When I'm not buried in books and assignments, you can find me exploring the realms of technology, tinkering with code, and creating innovative solutions. I believe in the power of knowledge and its ability to shape a better future.</p>
+        <p>If you're interested in connecting with me or discussing ideas, feel free to reach out. I'm always eager to engage in meaningful conversations and collaborate on exciting projects!</p>
+        <div class="contact-info">
+            <p>Contact Information:</p>
+            <p>Name: Aditya Tiwari</p>
+            <p>Email: <a href="mailto:your.email@example.com">tiwari.adi2008@gmail.com</a></p>
+            <p>Phone: <a href="tel:7898088745">7898088745</a></p>
+            <p>University: <a href="https://www.gla.ac.in/" target="_blank" rel="noopener noreferrer">GLA University Mathura</a></p>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
